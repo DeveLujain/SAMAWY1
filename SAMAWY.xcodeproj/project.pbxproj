@@ -15,6 +15,7 @@
 		8BE932C52CAD1F470038672F /* SAMAWYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE932C42CAD1F470038672F /* SAMAWYTests.swift */; };
 		8BE932CF2CAD1F470038672F /* SAMAWYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE932CE2CAD1F470038672F /* SAMAWYUITests.swift */; };
 		8BE932D12CAD1F470038672F /* SAMAWYUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE932D02CAD1F470038672F /* SAMAWYUITestsLaunchTests.swift */; };
+		9966C0812CAD39CA00FA1560 /* Rawan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9966C0802CAD39CA00FA1560 /* Rawan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		8BE932CA2CAD1F470038672F /* SAMAWYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAMAWYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE932CE2CAD1F470038672F /* SAMAWYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMAWYUITests.swift; sourceTree = "<group>"; };
 		8BE932D02CAD1F470038672F /* SAMAWYUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMAWYUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9966C0802CAD39CA00FA1560 /* Rawan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rawan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				184865AF2CAD2C5900A8A501 /* Heba.swift */,
 				8BE932B72CAD1F470038672F /* Assets.xcassets */,
 				8BE932B92CAD1F470038672F /* Preview Content */,
+				9966C0802CAD39CA00FA1560 /* Rawan.swift */,
 			);
 			path = SAMAWY;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				184865B02CAD2C5900A8A501 /* Heba.swift in Sources */,
 				8BE932B62CAD1F460038672F /* ContentView.swift in Sources */,
 				8BE932B42CAD1F460038672F /* SAMAWYApp.swift in Sources */,
+				9966C0812CAD39CA00FA1560 /* Rawan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
