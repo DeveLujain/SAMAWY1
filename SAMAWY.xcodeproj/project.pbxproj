@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BE932B42CAD1F460038672F /* SAMAWYApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE932B32CAD1F460038672F /* SAMAWYApp.swift */; };
+		8BE932B62CAD1F460038672F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE932B52CAD1F460038672F /* ContentView.swift */; };
+		8BE932B82CAD1F470038672F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE932B72CAD1F470038672F /* Assets.xcassets */; };
+		8BE932BB2CAD1F470038672F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE932BA2CAD1F470038672F /* Preview Assets.xcassets */; };
+		8BE932C52CAD1F470038672F /* SAMAWYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE932C42CAD1F470038672F /* SAMAWYTests.swift */; };
+		8BE932CF2CAD1F470038672F /* SAMAWYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE932CE2CAD1F470038672F /* SAMAWYUITests.swift */; };
+		8BE932D12CAD1F470038672F /* SAMAWYUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE932D02CAD1F470038672F /* SAMAWYUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BE932C12CAD1F470038672F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BE932A82CAD1F460038672F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BE932AF2CAD1F460038672F;
+			remoteInfo = SAMAWY;
+		};
+		8BE932CB2CAD1F470038672F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BE932A82CAD1F460038672F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BE932AF2CAD1F460038672F;
+			remoteInfo = SAMAWY;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BE932B02CAD1F460038672F /* SAMAWY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAMAWY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE932B32CAD1F460038672F /* SAMAWYApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMAWYApp.swift; sourceTree = "<group>"; };
+		8BE932B52CAD1F460038672F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8BE932B72CAD1F470038672F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BE932BA2CAD1F470038672F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BE932C02CAD1F470038672F /* SAMAWYTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAMAWYTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE932C42CAD1F470038672F /* SAMAWYTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMAWYTests.swift; sourceTree = "<group>"; };
+		8BE932CA2CAD1F470038672F /* SAMAWYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAMAWYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE932CE2CAD1F470038672F /* SAMAWYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMAWYUITests.swift; sourceTree = "<group>"; };
+		8BE932D02CAD1F470038672F /* SAMAWYUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMAWYUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BE932AD2CAD1F460038672F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE932BD2CAD1F470038672F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE932C72CAD1F470038672F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BE932A72CAD1F460038672F = {
+			isa = PBXGroup;
+			children = (
+				8BE932B22CAD1F460038672F /* SAMAWY */,
+				8BE932C32CAD1F470038672F /* SAMAWYTests */,
+				8BE932CD2CAD1F470038672F /* SAMAWYUITests */,
+				8BE932B12CAD1F460038672F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BE932B12CAD1F460038672F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BE932B02CAD1F460038672F /* SAMAWY.app */,
+				8BE932C02CAD1F470038672F /* SAMAWYTests.xctest */,
+				8BE932CA2CAD1F470038672F /* SAMAWYUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BE932B22CAD1F460038672F /* SAMAWY */ = {
+			isa = PBXGroup;
+			children = (
+				8BE932B32CAD1F460038672F /* SAMAWYApp.swift */,
+				8BE932B52CAD1F460038672F /* ContentView.swift */,
+				8BE932B72CAD1F470038672F /* Assets.xcassets */,
+				8BE932B92CAD1F470038672F /* Preview Content */,
+			);
+			path = SAMAWY;
+			sourceTree = "<group>";
+		};
+		8BE932B92CAD1F470038672F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8BE932BA2CAD1F470038672F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8BE932C32CAD1F470038672F /* SAMAWYTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BE932C42CAD1F470038672F /* SAMAWYTests.swift */,
+			);
+			path = SAMAWYTests;
+			sourceTree = "<group>";
+		};
+		8BE932CD2CAD1F470038672F /* SAMAWYUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8BE932CE2CAD1F470038672F /* SAMAWYUITests.swift */,
+				8BE932D02CAD1F470038672F /* SAMAWYUITestsLaunchTests.swift */,
+			);
+			path = SAMAWYUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BE932AF2CAD1F460038672F /* SAMAWY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BE932D42CAD1F470038672F /* Build configuration list for PBXNativeTarget "SAMAWY" */;
+			buildPhases = (
+				8BE932AC2CAD1F460038672F /* Sources */,
+				8BE932AD2CAD1F460038672F /* Frameworks */,
+				8BE932AE2CAD1F460038672F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAMAWY;
+			productName = SAMAWY;
+			productReference = 8BE932B02CAD1F460038672F /* SAMAWY.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BE932BF2CAD1F470038672F /* SAMAWYTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BE932D72CAD1F470038672F /* Build configuration list for PBXNativeTarget "SAMAWYTests" */;
+			buildPhases = (
+				8BE932BC2CAD1F470038672F /* Sources */,
+				8BE932BD2CAD1F470038672F /* Frameworks */,
+				8BE932BE2CAD1F470038672F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BE932C22CAD1F470038672F /* PBXTargetDependency */,
+			);
+			name = SAMAWYTests;
+			productName = SAMAWYTests;
+			productReference = 8BE932C02CAD1F470038672F /* SAMAWYTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8BE932C92CAD1F470038672F /* SAMAWYUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BE932DA2CAD1F470038672F /* Build configuration list for PBXNativeTarget "SAMAWYUITests" */;
+			buildPhases = (
+				8BE932C62CAD1F470038672F /* Sources */,
+				8BE932C72CAD1F470038672F /* Frameworks */,
+				8BE932C82CAD1F470038672F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BE932CC2CAD1F470038672F /* PBXTargetDependency */,
+			);
+			name = SAMAWYUITests;
+			productName = SAMAWYUITests;
+			productReference = 8BE932CA2CAD1F470038672F /* SAMAWYUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BE932A82CAD1F460038672F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					8BE932AF2CAD1F460038672F = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					8BE932BF2CAD1F470038672F = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8BE932AF2CAD1F460038672F;
+					};
+					8BE932C92CAD1F470038672F = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8BE932AF2CAD1F460038672F;
+					};
+				};
+			};
+			buildConfigurationList = 8BE932AB2CAD1F460038672F /* Build configuration list for PBXProject "SAMAWY" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BE932A72CAD1F460038672F;
+			productRefGroup = 8BE932B12CAD1F460038672F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BE932AF2CAD1F460038672F /* SAMAWY */,
+				8BE932BF2CAD1F470038672F /* SAMAWYTests */,
+				8BE932C92CAD1F470038672F /* SAMAWYUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BE932AE2CAD1F460038672F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE932BB2CAD1F470038672F /* Preview Assets.xcassets in Resources */,
+				8BE932B82CAD1F470038672F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE932BE2CAD1F470038672F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE932C82CAD1F470038672F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BE932AC2CAD1F460038672F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE932B62CAD1F460038672F /* ContentView.swift in Sources */,
+				8BE932B42CAD1F460038672F /* SAMAWYApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE932BC2CAD1F470038672F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE932C52CAD1F470038672F /* SAMAWYTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE932C62CAD1F470038672F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE932D12CAD1F470038672F /* SAMAWYUITestsLaunchTests.swift in Sources */,
+				8BE932CF2CAD1F470038672F /* SAMAWYUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BE932C22CAD1F470038672F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BE932AF2CAD1F460038672F /* SAMAWY */;
+			targetProxy = 8BE932C12CAD1F470038672F /* PBXContainerItemProxy */;
+		};
+		8BE932CC2CAD1F470038672F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BE932AF2CAD1F460038672F /* SAMAWY */;
+			targetProxy = 8BE932CB2CAD1F470038672F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8BE932D22CAD1F470038672F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BE932D32CAD1F470038672F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BE932D52CAD1F470038672F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SAMAWY/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lujain.SAMAWY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BE932D62CAD1F470038672F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SAMAWY/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lujain.SAMAWY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8BE932D82CAD1F470038672F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lujain.SAMAWYTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAMAWY.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SAMAWY";
+			};
+			name = Debug;
+		};
+		8BE932D92CAD1F470038672F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lujain.SAMAWYTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAMAWY.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SAMAWY";
+			};
+			name = Release;
+		};
+		8BE932DB2CAD1F470038672F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lujain.SAMAWYUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SAMAWY;
+			};
+			name = Debug;
+		};
+		8BE932DC2CAD1F470038672F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lujain.SAMAWYUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SAMAWY;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BE932AB2CAD1F460038672F /* Build configuration list for PBXProject "SAMAWY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE932D22CAD1F470038672F /* Debug */,
+				8BE932D32CAD1F470038672F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE932D42CAD1F470038672F /* Build configuration list for PBXNativeTarget "SAMAWY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE932D52CAD1F470038672F /* Debug */,
+				8BE932D62CAD1F470038672F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE932D72CAD1F470038672F /* Build configuration list for PBXNativeTarget "SAMAWYTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE932D82CAD1F470038672F /* Debug */,
+				8BE932D92CAD1F470038672F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE932DA2CAD1F470038672F /* Build configuration list for PBXNativeTarget "SAMAWYUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE932DB2CAD1F470038672F /* Debug */,
+				8BE932DC2CAD1F470038672F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BE932A82CAD1F460038672F /* Project object */;
+}
