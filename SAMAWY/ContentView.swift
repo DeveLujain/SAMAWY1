@@ -4,7 +4,7 @@
 //
 //  Created by Lujain sh on 02/10/2024.
 //
-
+//pick colour page
 import SwiftUI
 
 struct ContentView: View {
