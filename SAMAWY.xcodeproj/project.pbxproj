@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180AE4F02CAE9A6200F78650 /* Splash Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180AE4EF2CAE9A6200F78650 /* Splash Page.swift */; };
 		184865B02CAD2C5900A8A501 /* Heba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184865AF2CAD2C5900A8A501 /* Heba.swift */; };
 		8BE932B42CAD1F460038672F /* SAMAWYApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE932B32CAD1F460038672F /* SAMAWYApp.swift */; };
 		8BE932B62CAD1F460038672F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE932B52CAD1F460038672F /* ContentView.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180AE4EF2CAE9A6200F78650 /* Splash Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Splash Page.swift"; sourceTree = "<group>"; };
 		184865AF2CAD2C5900A8A501 /* Heba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heba.swift; sourceTree = "<group>"; };
 		8BE932B02CAD1F460038672F /* SAMAWY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAMAWY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE932B32CAD1F460038672F /* SAMAWYApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMAWYApp.swift; sourceTree = "<group>"; };
@@ -101,9 +103,10 @@
 				8BE932B32CAD1F460038672F /* SAMAWYApp.swift */,
 				8BE932B52CAD1F460038672F /* ContentView.swift */,
 				184865AF2CAD2C5900A8A501 /* Heba.swift */,
+				180AE4EF2CAE9A6200F78650 /* Splash Page.swift */,
+				9966C0802CAD39CA00FA1560 /* Rawan.swift */,
 				8BE932B72CAD1F470038672F /* Assets.xcassets */,
 				8BE932B92CAD1F470038672F /* Preview Content */,
-				9966C0802CAD39CA00FA1560 /* Rawan.swift */,
 			);
 			path = SAMAWY;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				184865B02CAD2C5900A8A501 /* Heba.swift in Sources */,
+				180AE4F02CAE9A6200F78650 /* Splash Page.swift in Sources */,
 				8BE932B62CAD1F460038672F /* ContentView.swift in Sources */,
 				8BE932B42CAD1F460038672F /* SAMAWYApp.swift in Sources */,
 				9966C0812CAD39CA00FA1560 /* Rawan.swift in Sources */,
