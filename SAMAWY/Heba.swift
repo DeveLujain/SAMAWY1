@@ -32,6 +32,17 @@ struct Heba: View {
                 .frame(width: 120, height: 120) // Made it a bit bigger
                 .position(x: 200, y: 80)
             
+            // Back button
+            Button(action: {
+                // Handle back button action here
+                print("Back button tapped")
+            }) {
+                Image(systemName: "chevron.backward")
+                    .font(.system(size: 24))
+                    .foregroundColor(.white)
+            }
+            .position(x: 50, y: 70) // Position in the top left corner
+
             // Home button changed to house.fill
             Button(action: {
                 isHomeActive.toggle() // Toggle home button state
