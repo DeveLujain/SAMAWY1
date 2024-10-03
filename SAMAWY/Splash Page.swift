@@ -9,9 +9,9 @@ struct Splash_Page: View {
     var body: some View {
         ZStack {
             // Background Image
-            Image("Background2")
+            Image("exported backg")
                 .resizable()
-                .scaledToFill()
+                .aspectRatio(contentMode: .fill)
                 .ignoresSafeArea()
 
             VStack {

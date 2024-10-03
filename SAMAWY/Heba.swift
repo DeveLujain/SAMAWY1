@@ -20,7 +20,7 @@ struct Heba: View {
     var body: some View {
         ZStack {
             // Background image
-            Image("Background1")
+            Image("exported backg")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .ignoresSafeArea()
