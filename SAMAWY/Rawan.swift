@@ -15,7 +15,7 @@ struct RAWAN1: View {
             Image("emojis")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 100, height: 100)
+                .frame(width: 120, height: 120)
                 .position(x: 200, y: 80)
             
             // Foreground image (stars)
@@ -79,7 +79,7 @@ struct RAWAN1: View {
                             .foregroundColor(Color(red: 71/255, green: 71/255, blue: 74/255)) // Updated color
                             .padding()
                             .frame(width: 147, height: 41)
-                            .background(Color(red: 209/255, green: 233/255, blue: 246/255).opacity(name.isEmpty ? 0.45 : 1.0)) // Dynamic opacity
+                            .background(name.isEmpty ? Color(red: 209/255, green: 233/255, blue: 246/255).opacity(0.45) : Color.white) // Change background color conditionally
                             .cornerRadius(10)
                             .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
                             .cornerRadius(21)
