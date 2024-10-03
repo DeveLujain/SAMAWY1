@@ -24,13 +24,13 @@ struct RAWAN1: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height: 300)
                 .padding()
-                .position(x: 190, y: 248)
+                .position(x: 190, y: 248 + offset) // Apply offset to the stars image
             
             // Moving foreground image (r) positioned below the text
             VStack {
                 Spacer() // Push content upwards
                 
-                Image("r")
+                Image("Group 28-3")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 250, height: 250)
