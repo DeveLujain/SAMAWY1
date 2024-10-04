@@ -1,60 +1,120 @@
-//
-//  ContentView.swift
-//  SAMAWY
-//
-//  Created by Lujain sh on 02/10/2024.
-//
-//pick colour page
 import SwiftUI
 
 struct ContentView: View {
-    
- //   @State var selectedColor = Color.gray
+    @State private var selectedColor: Color = Color(hex: "DAD8D6") ?? .clear
     
     var body: some View {
         ZStack {
+            // Background image spanning the entire view
             Image("background")
-                .imageScale(.large)
+                .resizable()              // Ensure the image resizes to fit the screen
+                .scaledToFill()           // Make the image cover the entire view
                 .ignoresSafeArea()
-            
-            Image ("logo")
-                .padding(.bottom, 698.415)
-                .frame(width: 900.0, height: 80.0)
-            
-            HStack{
-                Image(systemName: "arrow.backward")
-                    .foregroundColor(Color.white)
-                    .position(x:290
-                              , y: 70)
-            }
-            
+        // Ignore safe area for full-screen background
             VStack{
-                Text("Pleased to meet you Falak!")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.9725490196078431, green: 0.9647058823529412, blue: 0.9568627450980393)/*@END_MENU_TOKEN@*/)
-                    .multilineTextAlignment(.center)
-                    .padding(.top, -260.0)
-                    .frame(width: 300.0)
-                
-                Image ("Whitecloud")
-                    .padding(.top, -150.0)
-                
-                Text("Dress me in colors!")
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color(red: 0.9725490196078431, green: 0.9647058823529412, blue: 0.9568627450980393))
-                    .padding(.top, 30.0)
-//
+                Spacer()
+
+                HStack{
+                    Button(action: {
+                        print("Back button tapped")
+                    }) {
+                        Image(systemName: "chevron.backward")
+                            .font(.system(size: 24))
+                            .foregroundColor(.white)
+                            .padding([.top, .leading], 20)
+                    }
+                    Spacer()
+
+                    Image("logo")
+                        .resizable()
+                       // .padding(.top, 50)
+                        .position(x: 80, y: 55)
+                        .scaledToFit()
+                        .frame(width:150, height:135)
+                    Spacer()
                     
-                    
+                    Button(action: {
+                        print("Back button tapped")
+                    }) {
+                        Image(systemName: "house.fill")
+                            .font(.system(size: 24))
+                            .foregroundColor(.white)
+                            .padding([.top, .trailing], 20)
+                    }
                 }
-                .padding()
+                
+                Text("Pleased to meet you Falak!")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color(hue: 0.083, saturation: 0.016, brightness: 0.973))
+                    .multilineTextAlignment(.center)
+                    .position(x:200, y:10)
+                
                 
             }
-            .imageScale(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
+            Text("Dress me in colors!")
+                .font(.title2)
+                .fontWeight(.semibold)
+                .foregroundColor(Color(hue: 0.083, saturation: 0.016, brightness: 0.973))
+                .padding(.top, 200)
+                
+            
+            VStack {
+                // Color Picker View
+                CustomColor(selectedColor: $selectedColor)
+                    .padding()
+                //.background(.ultraThinMaterial)
+                    .cornerRadius(15)
+                    .shadow(radius: 10)
+                    .position(x:219, y:500)
+                
+                Spacer()
+                
+                
+
+                // Done Button
+                Button(action: {
+                    // Add your action for the "Done" button here (e.g., dismissing the view)
+                    print("Done button tapped!")
+                }) {
+                    Text("Done")
+                        .foregroundColor(.black)
+                        .padding()
+                        .fontWeight(.semibold)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.white) // Button color
+                        .frame(width: 133, height: 41)
+                        .cornerRadius(22)
+                        .shadow(radius: 10)
+                        .padding(.horizontal, 20) // Padding around the button
+                }
+                .padding(.bottom, 10) // Adjust bottom padding if needed
+                
+                
+                Button(action: {
+                    print("Skip button tapped!")
+                }) {
+                    Text("Skip")
+                        .fontWeight(.semibold) // Set font weight to semibold
+                        .foregroundColor(.white) // Set text color to white
+                        .padding()
+                        .frame(width: 133, height: 41)
+                        .cornerRadius(22)
+                        .shadow(radius: 10)
+                        .padding(.horizontal, 20)
+                }
+                .padding(.bottom, 40)
+            }
         }
+        .padding(.bottom, 40)
     }
     
-    #Preview {
-        ContentView()
+    struct Coloring_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
+}
+#Preview {
+    ContentView()
+}
