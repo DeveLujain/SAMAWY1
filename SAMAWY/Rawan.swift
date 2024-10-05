@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct RAWAN1: View {
+struct Rawan: View {
     @State private var offset: CGFloat = 0
     @State private var name: String = "" // Make sure this is declared as @State
     
@@ -106,6 +106,6 @@ struct RAWAN1: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        RAWAN1()
+        Rawan()
     }
 }
