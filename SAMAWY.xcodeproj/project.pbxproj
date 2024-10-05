@@ -121,10 +121,10 @@
 				184865AF2CAD2C5900A8A501 /* Heba.swift */,
 				8BC7F0F82CB0A875003F50C6 /* Needhpage.swift */,
 				180AE4EF2CAE9A6200F78650 /* Splash Page.swift */,
-				8BE932B72CAD1F470038672F /* Assets.xcassets */,
-				8BE932B92CAD1F470038672F /* Preview Content */,
 				3268CF3E2CB16F0000E224B1 /* Maryam.swift */,
 				3268CF402CB16F7500E224B1 /* monthlycalendar.swift */,
+				8BE932B72CAD1F470038672F /* Assets.xcassets */,
+				8BE932B92CAD1F470038672F /* Preview Content */,
 			);
 			path = SAMAWY;
 			sourceTree = "<group>";
