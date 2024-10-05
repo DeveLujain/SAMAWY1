@@ -34,11 +34,8 @@ struct Rasha: View {
                 VStack {
                     // Weather icons and custom back & home button
                     HStack {
-                        // Custom Back Button on the top-left corner
-                        Button(action: {
-                            presentationMode.wrappedValue.dismiss() // Go back to the previous page
-                        }) {
-                            // Custom icon and color for the back button
+                        // NavigationLink for the custom Back Button on the top-left corner
+                        NavigationLink(destination: Needhpage()) { // Navigate to Needhpage when back button is clicked
                             Image(systemName: "chevron.backward") /// Custom back arrow
                                 .font(.system(size: 24)) // Adjust the size
                                 .foregroundColor(.white) // Change the color
@@ -56,11 +53,8 @@ struct Rasha: View {
                             
                         Spacer()
 
-                        // Home Button on the top right corner
-                        Button(action: {
-                            isHomeActive.toggle() // Toggle home button state
-                            homeButtonColor = isHomeActive ? Color(red: 251/255, green: 235/255, blue: 139/255) : Color.white // Change color based on active state
-                        }) {
+                        // NavigationLink for the home button
+                        NavigationLink(destination: Maryam()) { // Navigate to Maryam when home button is clicked
                             Image(systemName: "house.fill")
                                 .foregroundColor(homeButtonColor) // Change color based on active state
                                 .font(.system(size: 24)) // Same size for the icon
@@ -185,4 +179,3 @@ struct PageControl: UIViewRepresentable {
 #Preview {
     Rasha()
 }
-
