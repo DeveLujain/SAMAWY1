@@ -20,6 +20,12 @@ struct Rasha2: View {
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
+            
+            Image("Icons")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 120, height: 120) // Made it a bit bigger
+                .position(x: 200, y: 80)
 
             VStack {
                 // Custom Back Button and Home Button at the top
