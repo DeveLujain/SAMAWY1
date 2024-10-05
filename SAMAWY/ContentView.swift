@@ -109,7 +109,7 @@ struct ContentView: View {
         .padding(.bottom, 40)
     }
     
-    struct Coloring_Previews: PreviewProvider {
+    struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
         }
