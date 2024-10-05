@@ -19,6 +19,8 @@
 		8BE932CF2CAD1F470038672F /* SAMAWYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE932CE2CAD1F470038672F /* SAMAWYUITests.swift */; };
 		8BE932D12CAD1F470038672F /* SAMAWYUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE932D02CAD1F470038672F /* SAMAWYUITestsLaunchTests.swift */; };
 		9966C0812CAD39CA00FA1560 /* Rawan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9966C0802CAD39CA00FA1560 /* Rawan.swift */; };
+		D803F39E2CB157650026DB0E /* Rasha.swift in Sources */ = {isa = PBXBuildFile; fileRef = D803F39D2CB157650026DB0E /* Rasha.swift */; };
+		D803F3A02CB158090026DB0E /* Rasha2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D803F39F2CB158090026DB0E /* Rasha2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		8BE932CE2CAD1F470038672F /* SAMAWYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMAWYUITests.swift; sourceTree = "<group>"; };
 		8BE932D02CAD1F470038672F /* SAMAWYUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMAWYUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9966C0802CAD39CA00FA1560 /* Rawan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rawan.swift; sourceTree = "<group>"; };
+		D803F39D2CB157650026DB0E /* Rasha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rasha.swift; sourceTree = "<group>"; };
+		D803F39F2CB158090026DB0E /* Rasha2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rasha2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 		8BE932A72CAD1F460038672F = {
 			isa = PBXGroup;
 			children = (
+				D803F39D2CB157650026DB0E /* Rasha.swift */,
+				D803F39F2CB158090026DB0E /* Rasha2.swift */,
 				8BE932B22CAD1F460038672F /* SAMAWY */,
 				8BE932C32CAD1F470038672F /* SAMAWYTests */,
 				8BE932CD2CAD1F470038672F /* SAMAWYUITests */,
@@ -272,11 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D803F3A02CB158090026DB0E /* Rasha2.swift in Sources */,
 				8BC7F0FD2CB0AA6C003F50C6 /* custom color.swift in Sources */,
 				184865B02CAD2C5900A8A501 /* Heba.swift in Sources */,
 				8BC7F0F92CB0A875003F50C6 /* Needhpage.swift in Sources */,
 				180AE4F02CAE9A6200F78650 /* Splash Page.swift in Sources */,
 				8BE932B62CAD1F460038672F /* ContentView.swift in Sources */,
+				D803F39E2CB157650026DB0E /* Rasha.swift in Sources */,
 				8BE932B42CAD1F460038672F /* SAMAWYApp.swift in Sources */,
 				9966C0812CAD39CA00FA1560 /* Rawan.swift in Sources */,
 			);
