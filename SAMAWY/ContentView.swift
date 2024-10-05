@@ -25,7 +25,7 @@ struct ContentView: View {
                     }
                     Spacer()
 
-                    Image("logo")
+                    Image("Icons")
                         .resizable()
                        // .padding(.top, 50)
                         .position(x: 80, y: 55)
