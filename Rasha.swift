@@ -51,8 +51,8 @@ struct Rasha: View {
                         Image("emojis")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 200, height: 50)
-                            .padding(.top, 30)
+                            .frame(width: 150, height: 50)
+                            .padding(.top, 0)
                             
                         Spacer()
 
