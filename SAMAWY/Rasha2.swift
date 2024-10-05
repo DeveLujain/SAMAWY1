@@ -1,4 +1,3 @@
-//
 //  Rasha2.swift
 //  SAMAWY
 //
@@ -8,13 +7,12 @@
 import SwiftUI
 
 struct Rasha2: View {
-    @Environment(\.presentationMode) var presentationMode // For going back in the navigation stack
     @State private var isFloating = false // Track the floating state for both cloud and text
     @State private var isHomeActive = false // Track the home button state
     @State private var homeButtonColor: Color = .white // Track the home button color
 
     var body: some View {
-        NavigationView {  // Ensure the view is inside a NavigationView to enable navigation
+//        NavigationView {  // Ensure the view is inside a NavigationView to enable navigation
             ZStack {
                 // Background Image (rain)
                 Image("rain")
@@ -22,22 +20,12 @@ struct Rasha2: View {
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
                 
-              
-                Image("emojis")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 150, height: 30)
-                    .padding(.top, 0)
-
                 VStack {
                     // Custom Back Button and Home Button at the top
                     HStack {
                         // Custom Back Button on the top-left corner
-                        Button(action: {
-                            presentationMode.wrappedValue.dismiss() // Go back to the previous page
-                        }) {
-                            // Custom icon and color for the back button
-                             Image(systemName: "chevron.backward") // Use any system icon
+                        NavigationLink(destination: Rasha().navigationBarBackButtonHidden(true)) { // Navigate back to Rasha view
+                            Image(systemName: "chevron.backward") // Use any system icon
                                 .font(.system(size: 24)) // Adjust the size to 24
                                 .foregroundColor(.white) // Set the color of the back arrow to white
                         }
@@ -46,7 +34,7 @@ struct Rasha2: View {
                         Spacer()
 
                         // NavigationLink to navigate to Maryam view when the home button is clicked
-                        NavigationLink(destination: Maryam()) {
+                        NavigationLink(destination: Maryam().navigationBarBackButtonHidden(true)) {
                             Image(systemName: "house.fill")
                                 .foregroundColor(homeButtonColor) // Change color based on active state
                                 .font(.system(size: 24)) // Same size for the icon
@@ -91,7 +79,7 @@ struct Rasha2: View {
                 }
             }
         }
-    }
+//    }
 }
 
 #Preview {

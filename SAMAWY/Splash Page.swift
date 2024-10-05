@@ -57,7 +57,7 @@ struct Splash_Page: View {
             }
         }
         .fullScreenCover(isPresented: $navigateToNextScreen) {
-            NextView() // Replace with your next view
+            Rawan() // Navigate to Rawan page instead of NextView
         }
     }
     
@@ -86,5 +86,4 @@ struct NextView: View {
 
 #Preview {
    Splash_Page()
-        
 }

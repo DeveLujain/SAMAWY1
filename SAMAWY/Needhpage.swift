@@ -1,84 +1,77 @@
-//
-//  Needhpage.swift
-//  SAMAWY
-//
-//  Created by Lujain sh on 05/10/2024.
-//
-
 import SwiftUI
 
 struct Needhpage: View {
     var body: some View {
-                ZStack {
-                    Image("exported backg") // الخلفية
-                        .resizable()
-                        .scaledToFill()
-                        .ignoresSafeArea()
-                    
-                        Image("logo")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 120, height: 120)
-                        .position(x: 200, y: 80)
-                    
-                    Button(action: {
-                        print("Back button tapped!")
-                        // Add action for navigation or dismissal here
-                    }) {
-                        Image(systemName: "chevron.backward")
-                            .font(.system(size: 24))
-                            .foregroundColor(.white)
-                    }
-                    .position(x: 50, y: 70)
-                    
-                    Image("SADCLOUD")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 250, height: 250)
-                        .position(x: 200, y: 300)
-                    
-                    Text("No worries, it’s alright to feel sad sometimes..")
-                        .font(.title)
-                        .fontWeight(.medium)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                        .padding(.top, 140.0)
-                    
-                    VStack {
-                        Spacer()
-                        
-                        Button(action: {
-                            print("I need help tapped!")
-                        }) {
-                            Text("Need help?")
-                                .fontWeight(.semibold)
-                                .foregroundColor(.black)
-                                .frame(width: 150, height: 50)
-                                .background(Color.white)
-                                .cornerRadius(50)
-                                .shadow(radius: 10)
-                        }
-                        .padding(.bottom, 150)
-                    }
-                    
-                    Button(action: {
-                        print("Home button tapped!")
-                        // Add action for navigation to home here
-                    }) {
-                        Image(systemName: "house.fill")
-                            .font(.system(size: 24))
-                            .foregroundColor(.white)
-                    }
-                    .position(x: 340, y: 70)
-                }
-            }
-        }
+        NavigationStack { // Wrap the entire view in NavigationStack
+            ZStack {
+                Image("exported backg") // الخلفية
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
 
-        struct Needhpage_Previews: PreviewProvider {
-            static var previews: some View {
-                Needhpage()
+                Image("logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 120, height: 120)
+                    .position(x: 200, y: 80)
+
+                // Back button (Go back in the stack)
+                Button(action: {
+                    // Dismiss the current view or handle custom back action if needed
+                }) {
+                    Image(systemName: "chevron.backward")
+                        .font(.system(size: 24))
+                        .foregroundColor(.white)
+                }
+                .position(x: 50, y: 70)
+
+                // Sad Cloud Image
+                Image("SADCLOUD")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 250, height: 250)
+                    .position(x: 200, y: 300)
+
+                // Sad text
+                Text("No worries, it’s alright to feel sad sometimes..")
+                    .font(.title)
+                    .fontWeight(.medium)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 140.0)
+
+                VStack {
+                    Spacer()
+
+                    // Button to navigate to Rasha page
+                    NavigationLink(destination: Rasha().navigationBarBackButtonHidden(true)) {
+                        Text("Need help?")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black)
+                            .frame(width: 150, height: 50)
+                            .background(Color.white)
+                            .cornerRadius(50)
+                            .shadow(radius: 10)
+                    }
+                    .padding(.bottom, 150)
+                }
+
+                // Home button to navigate to Maryam page
+                NavigationLink(destination: Maryam().navigationBarBackButtonHidden(true)) {
+                    Image(systemName: "house.fill")
+                        .font(.system(size: 24))
+                        .foregroundColor(.white)
+                }
+                .position(x: 340, y: 70) // Position in the top right corner
             }
+            .navigationTitle("") // Set navigation title to empty
+            .navigationBarBackButtonHidden(true) // Hide the default back button for the entire view
         }
-#Preview {
-    Needhpage()
+    }
+}
+
+struct Needhpage_Previews: PreviewProvider {
+    static var previews: some View {
+        Needhpage()
+    }
 }
