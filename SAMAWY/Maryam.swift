@@ -1,10 +1,3 @@
-//
-//  Maryam.swift
-//  SAMAWY
-//
-//  Created by Maryam Amer Bin Siddique on 02/04/1446 AH.
-//
-
 import SwiftUI
 
 struct Maryam: View {
@@ -16,10 +9,11 @@ struct Maryam: View {
     
     let cards = [
         "What about listening to some Irish music?",
-        "   "    ]
+        "   "
+    ]
     
     var body: some View {
-        NavigationView { // Wrap in NavigationView
+        NavigationStack { // Use NavigationStack instead of NavigationView
             ZStack {
                 Image("background")
                     .resizable()
@@ -43,26 +37,19 @@ struct Maryam: View {
     
     var headerView: some View {
         HStack {
-            Button(action: {}, label: {
-                Image(systemName: "gear")
-                    .font(.system(size: 24))
-                    .foregroundColor(.white)
-                    .padding(.leading, 30)
-                    .padding(.top, 70)
-            })
             Image("top-icons")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, height: 50)
-                .padding(.leading, 32)
+                .padding(.leading, 95)
                 .padding(.top, 50)
             
             Button(action: {}, label: {
-                Image(systemName: "house.fill")
+                Image(systemName: "gear")
                     .font(.system(size: 23))
                     .foregroundColor(.white)
-                    .padding(.leading, 30)
-                    .padding(.top, 65)
+                    .padding(.leading, 40)
+                    .padding(.top, 70)
             })
             Spacer()
         }
@@ -100,10 +87,12 @@ struct Maryam: View {
                         .fontWeight(.semibold)
                         .foregroundColor(.gray)
                     Spacer().frame(width: 165)
-                    Button(action: {}, label: {
+                    
+                    NavigationLink(destination: Heba().navigationBarBackButtonHidden(true)) { // NavigationLink to the new view
                         Image(systemName: "plus")
                             .foregroundColor(.gray)
-                    })
+                            .padding(.top, 10) // Adjust padding for better alignment
+                    }
                 }
                 .padding([.leading, .top], 30)
                 
