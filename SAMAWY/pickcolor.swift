@@ -26,18 +26,21 @@ struct pickcolor: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color(hue: 0.083, saturation: 0.016, brightness: 0.973))
                         .multilineTextAlignment(.center)
-                        .padding(.top, 10) // Adjust padding
+                        .padding(.top, 40) // Adjust padding
 
                     Spacer()
+                   
+                    
+                
 
                     // Color Picker View
                     CustomColor(selectedColor: $selectedColor)
                         .padding()
                         .cornerRadius(15)
                         .shadow(radius: 10)
+                    
 
-                    Spacer()
-
+                        
                     // Done Button to navigate to Heba page
                     Button(action: {
                         navigateToHeba = true  // Trigger navigation to Heba
@@ -99,7 +102,7 @@ struct pickcolor: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, height: 50)
-                .padding(.top, 10)
+                .padding(.top, 30)
             
             Spacer()
             

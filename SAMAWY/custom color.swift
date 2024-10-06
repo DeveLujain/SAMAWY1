@@ -26,6 +26,7 @@ struct CustomColor: View {
         Color(hex: "C6E6AB") ?? .clear, // Greencloud
         Color(hex: "FBEB8B") ?? .clear, // Ycloud
         Color(hex: "E3F4F4") ?? .clear  // image5
+        
     ]
     
     // Array of image names corresponding to the colors
@@ -35,19 +36,29 @@ struct CustomColor: View {
         "greencloud",  // Color: C6E6AB
         "Ycloud",      // Color: E3F4F4
 //        "image5"       // Color: FBEB8B
+            
     ]
     
     var body: some View {
         
            
     VStack {
+        
             // Display the image associated with the selected color
-            Image(selectedImageName)
+            Image(selectedImageName)   //cloud image
                 .resizable()
                 .scaledToFit()
                 .frame(width: 300.0, height: 250)
-                .position(x:160, y:200)
-            
+                .position(x:180, y:140)
+        
+        VStack {
+            Text("Dress me in colors!")
+                          .font(.title2)
+                          .fontWeight(.semibold)
+                          .foregroundColor(Color(hue: 0.083, saturation: 0.016, brightness: 0.973))
+                          .position(x: 180,  y:150)
+        }
+       
             //scrolling
             ScrollView(.horizontal) {
                 HStack {
@@ -66,7 +77,7 @@ struct CustomColor: View {
                 .background(.thinMaterial)
                 .cornerRadius(20)
                 .padding(.horizontal)
-                .position(x:160, y:100)
+                .position(x:180, y: 100)
             }
       }
     }
@@ -94,6 +105,6 @@ struct Coloring: View {
 
 struct CustomColor_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+    pickcolor()
     }
 }

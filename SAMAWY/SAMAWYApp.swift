@@ -11,7 +11,7 @@ import SwiftUI
 struct SAMAWYApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Splash_Page()
         }
     }
 }
