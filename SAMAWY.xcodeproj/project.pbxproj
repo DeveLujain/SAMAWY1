@@ -116,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				8BE932B32CAD1F460038672F /* SAMAWYApp.swift */,
+				180AE4EF2CAE9A6200F78650 /* Splash Page.swift */,
 				9966C0802CAD39CA00FA1560 /* Rawan.swift */,
 				D803F3A12CB1A19C0026DB0E /* pickcolor.swift */,
 				D803F39F2CB158090026DB0E /* Rasha2.swift */,
@@ -123,7 +124,6 @@
 				8BC7F0FC2CB0AA6C003F50C6 /* custom color.swift */,
 				184865AF2CAD2C5900A8A501 /* Heba.swift */,
 				8BC7F0F82CB0A875003F50C6 /* Needhpage.swift */,
-				180AE4EF2CAE9A6200F78650 /* Splash Page.swift */,
 				3268CF3E2CB16F0000E224B1 /* Maryam.swift */,
 				3268CF402CB16F7500E224B1 /* monthlycalendar.swift */,
 				8BE932B72CAD1F470038672F /* Assets.xcassets */,
