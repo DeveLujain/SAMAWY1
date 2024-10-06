@@ -100,16 +100,13 @@ struct pickcolor: View {
                 .scaledToFit()
                 .frame(width: 200, height: 50)
                 .padding(.top, 10)
-
+            
             Spacer()
             
-            Button(action: {
-                // Add action for house button if needed
-            }) {
+            NavigationLink(destination: Maryam().navigationBarBackButtonHidden(true)) {
                 Image(systemName: "house.fill")
-                    .font(.system(size: 23))
-                    .foregroundColor(.white)
-                    .padding(.leading, 30)
+                    .foregroundColor(.white) // Change color based on active state
+                    .font(.system(size: 24)) // Same size for the icon
             }
         }
         .padding(.top, 20)
