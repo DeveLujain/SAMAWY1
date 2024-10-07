@@ -89,9 +89,9 @@ struct Maryam: View {
                     Spacer().frame(width: 165)
                     
                     NavigationLink(destination: Heba().navigationBarBackButtonHidden(true)) { // NavigationLink to the new view
-                        Image(systemName: "plus")
+                        Image(systemName: "square.and.pencil")
                             .foregroundColor(.gray)
-                            .padding(.top, 10) // Adjust padding for better alignment
+//                            .padding(.top,10) // Adjust padding for better alignment
                     }
                 }
                 .padding([.leading, .top], 30)
@@ -133,20 +133,23 @@ struct Maryam: View {
     var favoriteCardsCard: some View {
         ZStack(alignment: .topLeading) {
             cardBackgroundRectangle(width: 350, height: 200)
-                .padding(.leading, 10)
+                .padding(.leading, 5)
+                .padding(.top, -35)
             
             VStack(alignment: .leading) {
                 HStack {
                     Text("Favorite Cards")
                         .fontWeight(.semibold)
                         .foregroundColor(.gray)
-                        .padding([.top, .leading], 30)
-                        .padding(.leading, 15)
+                        .padding(.leading, 45)
+                        .padding(.top, -5)
                     Spacer().frame(width: 180)
                     Button(action: {}, label: {
                         Image(systemName: "plus")
                             .foregroundColor(.gray)
-                            .padding(.top, 30)
+                            .padding(.top, -5)
+                            .padding(.trailing, 10)
+                        
                     })
                 }
                 
@@ -177,7 +180,7 @@ struct Maryam: View {
                             .frame(width: 8, height: 8)
                     }
                 }
-                .padding(.bottom, 30)
+                .padding(.bottom, 70)
                 .frame(maxWidth: .infinity)
             }
         }
