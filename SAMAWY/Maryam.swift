@@ -42,7 +42,7 @@ struct Maryam: View {
                 .scaledToFit()
                 .frame(width: 200, height: 50)
                 .padding(.leading, 95)
-                .padding(.top, 50)
+                .padding(.top, 90)
             
             Button(action: {}, label: {
                 Image(systemName: "gear")

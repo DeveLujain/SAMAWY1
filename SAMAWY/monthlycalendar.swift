@@ -54,7 +54,7 @@ struct monthlycalendar: View {
                 .scaledToFit()
                 .frame(width: 200, height: 50)
                 .padding(.leading,35)
-                .padding(.top, 50)
+                .padding(.top, 90)
             
             Button(action: {}, label: {
                 Image(systemName: "house.fill")
