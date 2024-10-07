@@ -1,26 +1,21 @@
-//
-//  Rasha.swift
-//  SAMAWY
-//
-//  Created by rasha on 02/04/1446 AH.
-//
-
 import SwiftUI
 
 struct Rasha: View {
     @State private var isCloudFloating = false // Track cloud animation movement
     @State private var currentPage = 0 // Track the current page of text boxes
-    @State private var likedSuggestions = [false, false, false, false] // Track if the user liked each text box
+    @State private var likedSuggestions = [false, false, false, false, false, false] // Track if the user liked each text box
     @State private var buttonClicked = false // Track whether the "Done" button was clicked
     @State private var isHomeActive = false // Track the home button state
     @State private var homeButtonColor: Color = .white // Track the home button color
     @Environment(\.presentationMode) var presentationMode // For custom back button action
     @State private var suggestions = [
-        "How about writing down how you feel? Journaling can help process emotions",
-        "How about practicing a quick gratitude exercise? Focusing on the positives can shift your mood",
-        "Try some deep breathing, it’s a quick way to calm your mind and reduce stress",
-        "Try grounding exercises by focusing on what's around you,it helps break negative thoughts"
-    ] // Array of suggestions with 4 options
+        "Plant something and take care of it—a symbol of healing",
+        "Make a simple, colorful dish and enjoy the process of cooking",
+        "Look at old photos or listen to songs from a happy memory",
+        "Try grounding exercises by focusing on what's around you,it helps break negative thoughts",
+        "Take a moment to list five things around you that make you grateful",
+        "Imagine your feelings as characters. What would they say?"
+    ] // Array of suggestions
 
     var body: some View {
         NavigationView { // Wrap in NavigationView to enable navigation
