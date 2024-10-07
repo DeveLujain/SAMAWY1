@@ -94,7 +94,7 @@ struct pickcolor: View {
                     .font(.system(size: 23))
                     .foregroundColor(.white)
             }
-            .padding([.leading, .top], 20)
+            .padding([.leading, .top], 40)
             
             Spacer()
             
@@ -103,6 +103,7 @@ struct pickcolor: View {
                 .scaledToFit()
                 .frame(width: 200, height: 50)
                 .padding(.top, 30)
+                .padding(.leading, 2)
             
             Spacer()
             
@@ -110,6 +111,7 @@ struct pickcolor: View {
                 Image(systemName: "house.fill")
                     .foregroundColor(.white) // Change color based on active state
                     .font(.system(size: 24)) // Same size for the icon
+                    .padding([.top, .trailing], 30)
             }
         }
         .padding(.top, 20)
