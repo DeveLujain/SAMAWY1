@@ -21,13 +21,13 @@ struct Splash_Page: View {
                         Image("Symbol\(index + 1)")
                             .resizable()
                             .scaledToFit()
-                            .frame(height: 40)
+                            .frame(height: 30)
                             .offset(y: animateSymbols && currentSymbolIndex == index ? -20 : 0) // Jump effect
                             .opacity(animateSymbols && currentSymbolIndex == index ? 1 : 0) // Fade in effect
                             .animation(.easeIn(duration: 0.5), value: animateSymbols)
                     }
                 }
-                .padding(.bottom, 10)
+                .padding(.bottom, -30)
 
                 // Text Logo with Animation
                 Image("TEXT LOGO")

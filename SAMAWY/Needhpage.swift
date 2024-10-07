@@ -9,16 +9,14 @@ struct Needhpage: View {
                     .scaledToFill()
                     .ignoresSafeArea()
 
-                Image("logo")
+                Image("top-icons")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 120, height: 120)
-                    .position(x: 200, y: 80)
+                    .position(x: 200, y: 70)
 
                 // Back button (Go back in the stack)
-                Button(action: {
-                    // Dismiss the current view or handle custom back action if needed
-                }) {
+                NavigationLink(destination: Heba().navigationBarBackButtonHidden(true)) {
                     Image(systemName: "chevron.backward")
                         .font(.system(size: 24))
                         .foregroundColor(.white)
@@ -35,10 +33,11 @@ struct Needhpage: View {
                 // Sad text
                 Text("No worries, it’s alright to feel sad sometimes..")
                     .font(.title)
-                    .fontWeight(.medium)
+                    .fontWeight(.semibold)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
-                    .padding(.top, 140.0)
+                    .padding(.top, 140)
+                    .padding([.leading, .trailing], 30)
 
                 VStack {
                     Spacer()

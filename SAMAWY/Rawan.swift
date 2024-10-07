@@ -17,7 +17,7 @@ struct Rawan: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 120, height: 120)
-                    .position(x: 200, y: 70)
+                    .position(x: 200, y: 60)
 
                 // Foreground image (stars)
                 Image("stars")

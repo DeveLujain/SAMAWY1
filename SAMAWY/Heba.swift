@@ -25,7 +25,7 @@ struct Heba: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 120, height: 120)
-                    .position(x: 200, y: 80)
+                    .position(x: 200, y: 70)
 
                 // Back button (Use NavigationLink to go back to PickColor)
                 NavigationLink(destination: pickcolor().navigationBarBackButtonHidden(true)) { // Navigate back to PickColor view
