@@ -16,10 +16,10 @@ struct Rasha: View {
     @State private var homeButtonColor: Color = .white // Track the home button color
     @Environment(\.presentationMode) var presentationMode // For custom back button action
     @State private var suggestions = [
-        "What about listening to some Irish music?",
-        "How about watching a relaxing movie?",
-        "Maybe try a short walk?",
-        "How about reading a calming book?"
+        "How about writing down how you feel? Journaling can help process emotions",
+        "How about practicing a quick gratitude exercise? Focusing on the positives can shift your mood",
+        "Try some deep breathing, it’s a quick way to calm your mind and reduce stress",
+        "Try grounding exercises by focusing on what's around you,it helps break negative thoughts"
     ] // Array of suggestions with 4 options
 
     var body: some View {
@@ -101,10 +101,10 @@ struct Rasha: View {
                                         .fontWeight(.bold)
                                         .foregroundColor(Color(red: 0.1, green: 0.2, blue: 0.6))
                                         .multilineTextAlignment(.center) // Align the text to the center
-                                        .padding(.horizontal, 100) // Add padding to ensure the text doesn't touch the edges
+                                        .padding(.horizontal, 93) // Add padding to ensure the text doesn't touch the edges
                                         .frame(maxWidth: .infinity, maxHeight: .infinity) // Make text fill the available space in the box
-                                        .padding(.top, 10) // Adjusted padding for top alignment
-                                        .padding(.bottom, 10) // Adjust bottom padding for space for heart button
+                                        .padding(.top, 20) // Adjusted padding for top alignment
+                                        .padding(.bottom, -20) // Adjust bottom padding for space for heart button
                                     
                                     HStack {
                                         Spacer()
@@ -119,7 +119,7 @@ struct Rasha: View {
                                         }
                                         .contentShape(Rectangle()) // Ensure the tappable area covers the icon
                                         .padding(.trailing, 150)
-                                        .padding(.bottom, 40)
+                                        .padding(.bottom, 35)
                                         
                                         Spacer()
                                     }
