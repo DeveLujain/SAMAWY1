@@ -25,7 +25,7 @@ struct CustomColor: View {
         Color(hex: "F2C5AB") ?? .clear, // Peachcloud
         Color(hex: "C6E6AB") ?? .clear, // Greencloud
         Color(hex: "FBEB8B") ?? .clear, // Ycloud
-        Color(hex: "E3F4F4") ?? .clear  // image5
+        Color(hex: "9A91E7") ?? .clear  // Pcloud
         
     ]
     
@@ -35,7 +35,7 @@ struct CustomColor: View {
         "peachcloud",  // Color: F2C5AB
         "greencloud",  // Color: C6E6AB
         "Ycloud",      // Color: E3F4F4
-//        "image5"       // Color: FBEB8B
+        "Pcloud"       // Color: FBEB8B
             
     ]
     

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct pickcolor: View {
     @State private var selectedColor: Color = Color(hex: "DAD8D6") ?? .clear
+    @State private var isColorSelected: Bool = false // Track if any color has been selected
     @State private var navigateToHeba = false  // Track navigation to Heba page
     @State private var navigateToMaryam = false  // Track navigation to Maryam page
     @State private var navigateToRawan = false  // Track navigation to Rawan page
@@ -9,75 +10,74 @@ struct pickcolor: View {
     @Environment(\.presentationMode) var presentationMode  // To control navigation
     
     var body: some View {
-//        NavigationView {  // Use NavigationView instead of NavigationStack
-            ZStack {
-                // Background image spanning the entire view
-                Image("background")
-                    .resizable()
-                    .scaledToFill()
-                    .ignoresSafeArea() // Ignore safe area for full-screen background
-                
-                VStack {
-                    headerView
-                    Spacer()
+        ZStack {
+            // Background image spanning the entire view
+            Image("background")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea() // Ignore safe area for full-screen background
+            
+            VStack {
+                headerView
+                Spacer()
 
-                    Text("Pleased to meet you Falak!")
-                        .font(.title)
-                        .fontWeight(.semibold)
-                        .foregroundColor(Color(hue: 0.083, saturation: 0.016, brightness: 0.973))
-                        .multilineTextAlignment(.center)
-                        .padding(.top, 40) // Adjust padding
+                Text("Pleased to meet you Falak!")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color(hue: 0.083, saturation: 0.016, brightness: 0.973))
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 40) // Adjust padding
 
-                    Spacer()
-                   
-                    
-                
+                Spacer()
 
-                    // Color Picker View
-                    CustomColor(selectedColor: $selectedColor)
+                // Color Picker View
+                CustomColor(selectedColor: $selectedColor)
+                    .onChange(of: selectedColor) { newValue in
+                        // Mark color as selected if it's not the default color
+                        isColorSelected = true
+                    }
+                    .padding()
+                    .cornerRadius(15)
+                    .shadow(radius: 10)
+
+                // Done Button to navigate to Heba page
+                Button(action: {
+                    navigateToHeba = true  // Trigger navigation to Heba
+                }) {
+                    Text("Done")
+                        .foregroundColor(.black)
                         .padding()
-                        .cornerRadius(15)
+                        .fontWeight(.semibold)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.white)
+                        .frame(width: 133, height: 41)
+                        .cornerRadius(22)
                         .shadow(radius: 10)
-                    
-
-                        
-                    // Done Button to navigate to Heba page
-                    Button(action: {
-                        navigateToHeba = true  // Trigger navigation to Heba
-                    }) {
-                        Text("Done")
-                            .foregroundColor(.black)
-                            .padding()
-                            .fontWeight(.semibold)
-                            .frame(maxWidth: .infinity)
-                            .background(Color.white)
-                            .frame(width: 133, height: 41)
-                            .cornerRadius(22)
-                            .shadow(radius: 10)
-                            .padding(.horizontal, 20)
+                        .padding(.horizontal, 20)
+                }
+                .disabled(!isColorSelected)  // Disable until a color is selected
+                .opacity(isColorSelected ? 1.0 : 0.5)  // Change opacity based on color selection
+                .background(
+                    NavigationLink(destination: Heba().navigationBarBackButtonHidden(true), isActive: $navigateToHeba) {
+                        EmptyView()
                     }
-                    .background(
-                        NavigationLink(destination: Heba().navigationBarBackButtonHidden(true), isActive: $navigateToHeba) {
-                            EmptyView()
-                        }
-                    )
-                    .padding(.bottom, 10)
+                )
+                .padding(.bottom, 10)
 
-                    // Skip Button to also navigate to Heba page
-                    Button(action: {
-                        navigateToHeba = true  // Trigger navigation to Heba
-                    }) {
-                        Text("Skip")
-                            .fontWeight(.semibold)
-                            .foregroundColor(.white)
-                            .padding()
-                            .frame(width: 133, height: 41)
-                            .cornerRadius(22)
-                            .shadow(radius: 10)
-                            .padding(.horizontal, 20)
-                    }
-                    .padding(.bottom, 40)
-//                }
+                // Skip Button to also navigate to Heba page
+                Button(action: {
+                    navigateToHeba = true  // Trigger navigation to Heba
+                }) {
+                    Text("Skip")
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(width: 133, height: 41)
+                        .cornerRadius(22)
+                        .shadow(radius: 10)
+                        .padding(.horizontal, 20)
+                }
+                .padding(.bottom, 40)
             }
             .padding(.bottom, 40)
             .navigationBarBackButtonHidden(true) // Hides the default back button

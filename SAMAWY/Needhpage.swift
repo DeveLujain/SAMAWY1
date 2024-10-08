@@ -1,14 +1,18 @@
 import SwiftUI
 
 struct Needhpage: View {
+    @State private var floatOffset: CGFloat = 0 // Track the vertical offset for floating animation
+
     var body: some View {
-        NavigationStack { // Wrap the entire view in NavigationStack
+        NavigationStack {
             ZStack {
-                Image("exported backg") // الخلفية
+                // Background Image
+                Image("exported backg")
                     .resizable()
                     .scaledToFill()
                     .ignoresSafeArea()
 
+                // Top icons
                 Image("top-icons")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -23,12 +27,19 @@ struct Needhpage: View {
                 }
                 .position(x: 50, y: 70)
 
-                // Sad Cloud Image
+                // Floating Sad Cloud Image
                 Image("SADCLOUD")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 250, height: 250)
+                    .offset(y: floatOffset) // Apply the floating offset
                     .position(x: 200, y: 300)
+                    .onAppear {
+                        // Animate the cloud to float up and down
+                        withAnimation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true)) {
+                            floatOffset = -10 // Move the cloud up by 10 points
+                        }
+                    }
 
                 // Sad text
                 Text("No worries, it’s alright to feel sad sometimes..")
