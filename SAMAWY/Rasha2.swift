@@ -63,7 +63,7 @@ struct Rasha2: View {
                         Image("cloudhappy") // Replace with your cloud asset name
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 200, height: 200)
+                            .frame(width: 250, height: 250)
                             .offset(y: isFloating ? -10 : 10) // Cloud floats together with the text
                             .animation(
                                 Animation.easeInOut(duration: 2).repeatForever(autoreverses: true), // Smooth floating

@@ -47,7 +47,7 @@ struct Heba: View {
                 Image("r")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 250, height: 250)
+                    .frame(width: 260, height: 260)
                     .padding()
                     .offset(y: floatOffset)
                     .position(x: 200, y: 350)

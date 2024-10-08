@@ -53,8 +53,8 @@ struct monthlycalendar: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, height: 50)
-                .padding(.leading,35)
-                .padding(.top, 90)
+                .padding(.leading, 35)
+                .padding(.top, 55)
             
             Button(action: {}, label: {
                 Image(systemName: "house.fill")

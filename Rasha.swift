@@ -34,6 +34,8 @@ struct Rasha: View {
                             Image(systemName: "chevron.backward") /// Custom back arrow
                                 .font(.system(size: 24)) // Adjust the size
                                 .foregroundColor(.white) // Change the color
+                                .padding(.top, -15)
+
                         }
                         .padding(.leading, 20)
 
@@ -43,9 +45,10 @@ struct Rasha: View {
                         Image("emojis")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 150, height: 50)
-                            .padding(.top, 0)
-                            
+                            .frame(width: 120, height: 120)
+                            .padding(.leading, 20)
+                            .padding(.top, -50)
+ 
                         Spacer()
 
                         // NavigationLink for the home button
@@ -53,8 +56,9 @@ struct Rasha: View {
                             Image(systemName: "house.fill")
                                 .foregroundColor(homeButtonColor) // Change color based on active state
                                 .font(.system(size: 24)) // Same size for the icon
+                                .padding(.top, -10)
                         }
-                        .padding(.trailing, 30) // Align the home button to the top-right
+                        .padding(.trailing, 20) // Align the home button to the top-right
                     }
                     .padding(.top, 30) // Align both weather icons and home button to the same level
                     .navigationBarBackButtonHidden(true) // Hide the default back button

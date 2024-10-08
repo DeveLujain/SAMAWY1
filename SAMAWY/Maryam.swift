@@ -8,7 +8,7 @@ struct Maryam: View {
     @State private var floatOffset: CGFloat = 0
     
     let cards = [
-        "What about listening to some Irish music?",
+        "Take a moment to list five things around you that make you grateful.",
         "   "
     ]
     
@@ -41,8 +41,8 @@ struct Maryam: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, height: 50)
-                .padding(.leading, 95)
-                .padding(.top, 90)
+                .padding(.leading, 99)
+                .padding(.top, 55)
             
             Button(action: {}, label: {
                 Image(systemName: "gear")
