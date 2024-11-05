@@ -35,8 +35,7 @@ In a fast-paced world, Samawy provides a moment to pause. It’s a warm, support
 
 ---
 
-## 👥 Maintained by [Mindfull guardians]. 
-Contributions are welcome! 
+## 👥 Maintained by [Mindfull guardians]. Contributions are welcome! 
 ---
 
 ## 📧 Contact Us
